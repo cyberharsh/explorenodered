@@ -1,5 +1,5 @@
 FROM vaday/nodered
-COPY test.sh /test.sh
-RUN chmod 755 /test.sh
+COPY start.sh /start.sh
+RUN chmod 755 /start.sh
 
-ENTRYPOINT ["/test.sh"]
+ENTRYPOINT ["/start.sh"]
