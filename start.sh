@@ -1,6 +1,6 @@
 #!/bin/bash
 
-service mosquitto start 
+service mosquitto start
 sleep 2
-node-red
+node-red &
 python mqttpub.py
